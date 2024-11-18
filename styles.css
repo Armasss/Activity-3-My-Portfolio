@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li, a, p{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+}
+
+.desktop_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.desktop_nav, .burger_links{
+    list-style: none;
+}
+
+
+.desktop_nav li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.desktop_nav li a{
+    transition: all 0.3s ease 0s;
+}
+
+.desktop_nav li a:hover{
+    transition: all 0.3s ease 0s;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.hamburger_nav {
+    display: none; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: relative;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+}
+
+.burger_links {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    height: 100vh; 
+    width: 300px; 
+    background-color: #f9f9f9;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.burger_links.show {
+    right: 0;
+}
+
+.burger_links a {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    font-weight: 700;
+
+}
+
+.burger_links a:hover {
+    color: white;
+    background-color: black; 
+}
+
+
+/* Close button styles */
+.burger_links li svg {
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.close_icon{
+    padding: 10px;
+    cursor: pointer;
+}
+
