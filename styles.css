@@ -1,28 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;700;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-image: radial-gradient(grey 1px, transparent 1px);
+    background-size: 50px 50px;
+    background-color: black;
+}
 li, a, p{
     font-family: "Inter", sans-serif;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
-h1{
+h1, h2, h3{
     font-family: "Inter", sans-serif;
     font-weight: 900;
+    color: white;
 }
+
+
 
 .desktop_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
     padding: 30px 10%;
+    color:white;
+    background-color: black;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
 }
 
 .desktop_nav, .burger_links{
@@ -37,13 +54,14 @@ h1{
 
 .desktop_nav li a{
     transition: all 0.3s ease 0s;
+    color: white;
 }
 
 .desktop_nav li a:hover{
     transition: all 0.3s ease 0s;
-    color: white;
+    color: black;
     padding: 10px;
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -52,11 +70,35 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    padding: 30px 10%;
+    background-color: black;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
 }
 
-.hamburger-icon {
+.hamburger-icon svg{
     cursor: pointer;
+    stroke: white;
+}
+
+.hamburger-icon svg:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+    stroke: white;
+}
+
+.close_icon svg{
+    cursor: pointer;
+    stroke: white;
+}
+
+.close_icon svg:hover{
+    cursor: pointer;
+    stroke: black;
+    border-radius: 100px;
+    background-color: white;
 }
 
 .burger_links {
@@ -65,7 +107,7 @@ h1{
     right: -300px; 
     height: 100vh; 
     width: 300px; 
-    background-color: #f9f9f9;
+    background-color: black;
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -89,20 +131,251 @@ h1{
 }
 
 .burger_links a:hover {
-    color: white;
-    background-color: black; 
+    color: black;
+    background-color: white; 
 }
 
-
-/* Close button styles */
-.burger_links li svg {
+.hamburger-icon svg {
     cursor: pointer;
+    width: 100%;
+}
+
+.burger_links svg {
+    cursor: pointer;
+    width: 100%;
     align-self: flex-end;
     margin-bottom: 20px;
 }
 
 .close_icon{
+    width: 100%;
     padding: 10px;
     cursor: pointer;
 }
+#main{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+#homepage{
+    margin-bottom: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.intro{
+    padding-bottom:20px;
+}
+.clickables{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cv_button, .social_icons, .discord{
+    padding: 10px;
+}
 
+
+.social_icons{
+    margin-top: 20px;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.social_icons svg{
+    fill: white;
+
+}
+.profile_pic img{
+    width: 25rem;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+#intro1{
+    font-weight: 400;
+    color: white;
+    font-size: 30px;
+}
+
+#intro2{
+    font-weight: 900;
+    color: white;
+    font-size: 64px;
+}
+
+#intro3{
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+}
+
+#cv{
+    background-color: black;
+    color: white;
+    padding: 15px 40px 15px 40px;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    transition: left 0.3s ease;
+    border: 1px solid gray;
+}
+#cv:hover{
+    background-color: white;
+    color: black;
+    transition: left 0.3s ease-in;
+
+}
+.icon_link svg{
+    width: 40px;
+}
+
+.social_icons a:hover{
+    padding: 0px 20px 0px 20px;
+    transition: all 0.3s ease;
+}
+
+.social_icons a{
+    transition: all 0.3s ease;
+}
+
+
+.discord{
+    display: flex;
+    align-items: center;
+}
+.discord svg{
+    width: 40px;
+    fill: white;
+}
+
+.discord p{
+    padding-left: 5px;
+    font-weight: 300;
+}
+#about{
+    padding-bottom: 90px;
+}
+.about_content{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h2{
+    font-size: 64px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#about p{
+    width: 40rem;
+    border: 1px solid gray;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    padding:30px;
+    font-size: 32px;
+}
+
+
+#about img{
+    width: 25rem;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+.projects_group{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.projects_container{
+    width: 500px;
+    height: 650px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid gray;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.projects_container:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 20px 12px 20px;
+    border-radius: 8px;
+    
+}
+.project_buttons a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px 12px 20px;
+    border-radius: 8px;
+    
+}
+
+#git_button{
+    background-color: white;
+    width: 120px;
+}
+
+#git_button p{
+    color: black;
+}
+
+#git_button:hover{
+
+    background-color: #cfcece; 
+}
+
+
+.project_buttons img, svg{
+    width: 16px;
+    margin-right: 10px;
+}
+
+#project_img{
+    width:100%;
+    height: 50%;
+    border-radius: 25px;
+}
+
+.project_background, .tech_used, .project_buttons{
+
+    margin: 30px;
+}
+
+.demo_button p{
+    color: white;
+}
+.demo_button svg{
+    fill: white;
+}
+
+
+.demo_button{
+    border: 1px white solid;
+    width: 168px;
+    margin-left: 10px;
+}
