@@ -17,4 +17,13 @@ function closeMenuOnClickOutside(event) {
     }
 }
 
+const menuLinks = document.querySelectorAll(".burger_links a");
+const sidebar = document.querySelector('.burger_links');
+
+menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      sidebar.classList.remove("show");
+    });
+  });
+
 document.addEventListener('click', closeMenuOnClickOutside);

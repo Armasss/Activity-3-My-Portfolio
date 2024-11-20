@@ -7,3 +7,73 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #homepage{
+        margin-top: 100px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 877px) {
+    .contact_socials{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root{
+        font-size: 8.5px;
+    }
+    .educ_container:hover{
+        transform: scale(1.25);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    
+    #intro2{
+        font-weight: 900;
+        color: white;
+        font-size: 3.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 470px) {
+    
+    #intro2{
+        font-weight: 900;
+        color: white;
+        font-size: 3.2rem;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    
+    #intro2{
+        font-weight: 900;
+        color: white;
+        font-size: 3.0rem;
+    }
+    .projects_container:hover{
+        transform: scale(1.0);
+        box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+    }
+}
+
+
