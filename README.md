@@ -27,14 +27,14 @@
     - i adjusted my font-size, and font-weight according to my preferences and to fit my content.
     - used margin, paddings to add spacing and structure to my content.
     - Primarily used black and white colors.
-    
+
 - Used Flexbox
     - I primarily used display: flex, flex-wrap: wrap and either row or column for flex-direction.
-    - I used to justify-content and align-items to center my elements
+    - I used justify-content and align-items to center my elements
 
 - Media queries
     - i addressed multiple breakpoints and adjust my content depending on the screensize
     - i used rem units in my styles so that i only have to change the root font size in my mediaqueries file
 
 - Javascript
-    - I used it to improve interactivy with the navbar.
+    - I used it to improve interactivity with the navbar.
