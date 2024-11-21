@@ -559,7 +559,7 @@ h2{
     font-size: 1rem;
 }
 
-.education{
+.education, .act{
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -576,11 +576,32 @@ h2{
     padding: 10px;
     border: 1px white solid;
     width: 18.75rem;
-    height: 12.5rem;
+    height: 10rem;
     border-radius: 25px;
     margin: 0.9375rem;
     background-color: black;
     transition: all 0.3s ease; 
+}
+
+.act_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px white solid;
+    width: 18.75rem;
+    height: auto;
+    border-radius: 25px;
+    margin: 0.9375rem;
+    background-color: black;
+    transition: all 0.3s ease; 
+}
+
+
+.educ_container img{
+    width: 100%;
+   
 }
 
 .educ_container *{
@@ -592,6 +613,48 @@ h2{
 .educ_container:hover{
     transform: scale(1.05);
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+}
+
+.act_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+    height: 30re;
+    border-radius: 25px;
+}
+
+.act_container:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+
+}
+
+.act_container div{
+    padding: 2.5rem;
+}
+
+.act_container h4{
+    font-size: 2.5rem;
+}
+
+.act_container img{
+    width: 25rem;
+    border-radius: 10px;
+}
+
+.act_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.act_text p{
+    font-size: 2rem;
 }
 
 
