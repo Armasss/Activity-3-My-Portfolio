@@ -9,11 +9,11 @@ html {
 }
 
 
-  *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    transition: transform 0.5s ease 0.5s;
+    transition: all 0.1s ease;
 }
 
 body{
@@ -200,6 +200,7 @@ h1{
     padding: 20px;
     margin: 0px auto 20px;
     transition: all 0.2s ease-in;
+    text-align: center;
 }
 
 .bio:hover{
