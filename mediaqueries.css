@@ -38,11 +38,21 @@
         font-size: 8.5px;
     }
     .educ_container:hover{
-        transform: scale(1.25);
+        transform: scale(1.15);
+    }
+
+    .bio:hover{
+        transform: scale(1.20);
     }
 }
 
-
+@media screen and (max-width: 355px) {
+    
+    :root{
+        font-size: 7.5px;
+    }
+    
+}
 @media screen and (max-width: 500px) {
     
     #intro2{
@@ -52,6 +62,9 @@
     }
     
 }
+
+
+
 
 @media screen and (max-width: 470px) {
     
